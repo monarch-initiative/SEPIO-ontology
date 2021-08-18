@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/13996/monarch-initiative/SEPIO-ontolog.svg)](https://zenodo.org/badge/latestdoi/13996/monarch-initiative/SEPIO-ontolog)
+[![DOI](https://zenodo.org/badge/13996/monarch-initiative/SEPIO-ontology.svg)](https://zenodo.org/badge/latestdoi/13996/monarch-initiative/SEPIO-ontology)
 
 
 The **Scientific Evidence and Provenance Information Ontology** (**SEPIO**) is an OWL ontology developed to support rich, computable representations of the evidence and provenance behind scientific assertions. The core ontology defines a flexible and generic model that can be applied in any domain and extended with domain-specific features. The ontological model is the foundation of a larger **SEPIO Framework** that provides mechanisms to create custom schema for specific applications that leverage modern semantic web standards. The framework is comprised of four main components:
