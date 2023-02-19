@@ -14,16 +14,14 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/sepio.owl>
-
-Import(<http://purl.obolibrary.org/obo/sepio/imports/ro_import.owl>)
-Import(<http://purl.obolibrary.org/obo/sepio/imports/omo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/sepio/imports/bfo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/sepio/imports/cob_import.owl>)
-
-Annotation(terms:description "The SEPIO ontology is in its early stages of development, undergoing iterative refinement as new requirements emerge and alignment with existing standards is explored.")
+Import(<http://purl.obolibrary.org/obo/sepio/imports/omo_import.owl>)
+Import(<http://purl.obolibrary.org/obo/sepio/imports/ro_import.owl>)
 Annotation(dc:title "Ontology for Scientific Evidence and Provenance Information")
-Annotation(terms:license <https://creativecommons.org/licenses/by/4.0/>)
 Annotation(terms:contributor <https://orcid.org/0000-0002-1048-5019>)
+Annotation(terms:description "The SEPIO ontology is in its early stages of development, undergoing iterative refinement as new requirements emerge and alignment with existing standards is explored.")
+Annotation(terms:license <https://creativecommons.org/licenses/by/4.0/>)
 
 Declaration(Class(obo:BFO_0000001))
 Declaration(Class(obo:BFO_0000002))
@@ -273,9 +271,8 @@ Declaration(AnnotationProperty(terms:description))
 Declaration(AnnotationProperty(terms:source))
 Declaration(AnnotationProperty(oboInOwl:hasDbXref))
 Declaration(AnnotationProperty(oboInOwl:inSubset))
-Declaration(AnnotationProperty(foaf:mbox))
 Declaration(AnnotationProperty(owl:deprecated))
-
+Declaration(AnnotationProperty(foaf:mbox))
 ############################
 #   Annotation Properties
 ############################
@@ -326,6 +323,7 @@ AnnotationPropertyRange(terms:source obo:IAO_0000030)
 # Annotation Property: oboInOwl:hasDbXref (database_cross_reference)
 
 AnnotationAssertion(rdfs:label oboInOwl:hasDbXref "database_cross_reference"@en)
+
 
 ############################
 #   Object Properties
@@ -466,7 +464,7 @@ AnnotationAssertion(oboInOwl:inSubset obo:RO_0002353 <http://purl.obolibrary.org
 AnnotationAssertion(rdfs:label obo:RO_0002353 "output of"@en)
 SubObjectPropertyOf(obo:RO_0002353 obo:RO_0000056)
 
-# Object Property: obo:RO_0002614 (is_evidence_with_support_from)
+# Object Property: obo:RO_0002614 (is evidence with support from)
 
 AnnotationAssertion(obo:IAO_0000115 obo:RO_0002614 "A relationship between a piece of evidence and an entity that plays a role in supporting that evidence.")
 AnnotationAssertion(obo:IAO_0000118 obo:RO_0002614 "is_evidence_supported_by"@en)
@@ -1552,8 +1550,8 @@ AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000011 "A processual entity that re
 AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000011 "'Plan' includes a future direction sense. That can be problematic if plans are changed during their execution. There are however implicit contingencies for protocols that an agent has in his mind that can be considered part of the plan, even if the agent didn't have them in mind before. Therefore, a planned process can diverge from what the agent would have said the plan was before executing it, by adjusting to problems encountered during execution (e.g. choosing another reagent with equivalent properties, if the originally planned one has run out.)")
 AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000011 "Bjoern Peters")
 AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000011 "branch derived")
-AnnotationAssertion(obo:IAO_0000232 obo:OBI_0000011 "This class merges the previously separated objective driven process and planned process, as they the separation proved hard to maintain. (1/22/09, branch call)"@en)
 AnnotationAssertion(obo:IAO_0000232 obo:OBI_0000011 "6/11/9: Edited at workshop. Used to include: is initiated by an agent")
+AnnotationAssertion(obo:IAO_0000232 obo:OBI_0000011 "This class merges the previously separated objective driven process and planned process, as they the separation proved hard to maintain. (1/22/09, branch call)"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:OBI_0000011 obo:obi.owl)
 AnnotationAssertion(rdfs:label obo:OBI_0000011 "planned process"@en)
 SubClassOf(obo:OBI_0000011 <http://www.w3.org/ns/prov#Activity>)
@@ -1976,11 +1974,11 @@ SubClassOf(obo:SEPIO_0000155 obo:SEPIO_0000154)
 AnnotationAssertion(rdfs:label obo:SEPIO_0000156 "curator role"@en)
 SubClassOf(obo:SEPIO_0000156 obo:SEPIO_0000048)
 
-# Class: obo:SEPIO_0000157 (software agent)
+# Class: obo:SEPIO_0000157 (obsolete software agent)
 
+AnnotationAssertion(obo:IAO_0100001 obo:SEPIO_0000157 <http://www.w3.org/ns/prov#SoftwareAgent>)
 AnnotationAssertion(rdfs:label obo:SEPIO_0000157 "obsolete software agent")
 AnnotationAssertion(owl:deprecated obo:SEPIO_0000157 "true")
-AnnotationAssertion(obo:IAO_0100001 obo:SEPIO_0000157 <http://www.w3.org/ns/prov#SoftwareAgent>)
 
 # Class: obo:SEPIO_0000158 (contribution)
 
@@ -2217,12 +2215,12 @@ SubClassOf(obo:SEPIO_000383 obo:IAO_0000310)
 
 # Class: obo:STATO_0000039 (statistic)
 
-AnnotationAssertion(obo:IAO_0000112 obo:STATO_0000039 _:genid2147483827)
+AnnotationAssertion(obo:IAO_0000112 obo:STATO_0000039 _:genid2147483828)
 AnnotationAssertion(obo:IAO_0000114 obo:STATO_0000039 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000115 obo:STATO_0000039 "a statistic is a measurement datum to describe a dataset or a variable. It is generated by a calculation on set of observed data."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:STATO_0000039 "Alejandra Gonzalez-Beltran"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:STATO_0000039 "Philippe Rocca-Serra"@en)
 AnnotationAssertion(obo:IAO_0000117 obo:STATO_0000039 "Orlaith Burke")
+AnnotationAssertion(obo:IAO_0000117 obo:STATO_0000039 "Philippe Rocca-Serra"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:STATO_0000039 "STATO, adapted from wikipedia (http://en.wikipedia.org/wiki/Statistic)."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:STATO_0000039 <http://purl.obofoundry.org/obo/stato.owl>)
 AnnotationAssertion(rdfs:label obo:STATO_0000039 "statistic"@en)
