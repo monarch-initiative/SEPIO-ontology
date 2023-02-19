@@ -13,6 +13,7 @@ primary_release: full
 import_group:
   products:
     - id: ro
-    - id: iao
+    - id: omo
     - id: bfo
+    - id: cob
 robot_java_args: '-Xmx8G'

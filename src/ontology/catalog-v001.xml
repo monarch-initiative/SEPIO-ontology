@@ -7,10 +7,7 @@
         <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/sepio-clingen-dosage-valueset" uri="extensions/clingen/clingen-dosage/sepio-clingen-dosage-valueset.owl"/>
         <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/sepio-valueset.owl" uri="sepio-valueset.owl"/>
         <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/sepio/imports/ro_import.owl" uri="imports/ro_import.owl"/>
-        <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/sepio/imports/ro_import.owl" uri="imports/ro_import.owl"/>
-        <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/sepio/imports/ro_import.obo" uri="imports/ro_import.obo"/>
-        <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/sepio/imports/iao_import.owl" uri="imports/iao_import.owl"/>
-        <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/sepio/imports/iao_import.obo" uri="imports/iao_import.obo"/>
+        <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/sepio/imports/cob_import.owl" uri="imports/cob_import.owl"/>
+        <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/sepio/imports/omo_import.owl" uri="imports/omo_import.owl"/>
         <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/sepio/imports/bfo_import.owl" uri="imports/bfo_import.owl"/>
-        <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/sepio/imports/bfo_import.obo" uri="imports/bfo_import.obo"/>
 </catalog>

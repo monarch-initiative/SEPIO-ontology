@@ -1,0 +1,311 @@
+Prefix(:=<http://purl.obolibrary.org/obo/sepio/imports/cob_import.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/sepio/imports/cob_import.owl>
+<http://purl.obolibrary.org/obo/sepio/releases/2023-02-19/imports/cob_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/cob/releases/2022-11-02/cob.owl>)
+Annotation(owl:versionInfo "2023-02-19")
+
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000017>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000023>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
+Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000077>))
+Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000082>))
+Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000119>))
+Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000120>))
+Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000121>))
+Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000122>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000005>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000027>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000030>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000033>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000104>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000310>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000011>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000066>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000070>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000260>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SEPIO_0000048>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000054>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/COB_0000016>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/COB_0000078>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/COB_0000081>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/COB_0000087>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000136>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000293>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000295>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000299>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000312>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000052>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000053>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000056>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000057>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000058>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/STATO_0000102>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/COB_based_on>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000116>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/title>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000115> (definition)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000115> "definition")
+
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000050> (part of)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000050> "part of")
+InverseObjectProperties(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BFO_0000051>)
+TransitiveObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>)
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000051> (has part)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000051> "has part")
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000054> (realized in)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000054> "realized in"@en)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/BFO_0000054> <http://purl.obolibrary.org/obo/COB_0000087>)
+
+# Object Property: <http://purl.obolibrary.org/obo/COB_0000016> (executed by)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/COB_0000016> "executed by"@en)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/COB_0000016> <http://purl.obolibrary.org/obo/STATO_0000102>)
+
+# Object Property: <http://purl.obolibrary.org/obo/COB_0000078> (concretizes)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/COB_0000078> "concretizes")
+InverseObjectProperties(<http://purl.obolibrary.org/obo/COB_0000078> <http://purl.obolibrary.org/obo/RO_0000058>)
+
+# Object Property: <http://purl.obolibrary.org/obo/COB_0000081> (intended to realize)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/COB_0000081> "intended to realize")
+
+# Object Property: <http://purl.obolibrary.org/obo/COB_0000087> (realizes)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/COB_0000087> "realizes")
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/COB_0000087> <http://purl.obolibrary.org/obo/BFO_0000015>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/COB_0000087> <http://purl.obolibrary.org/obo/BFO_0000017>)
+
+# Object Property: <http://purl.obolibrary.org/obo/IAO_0000136> (is about)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/COB_based_on> <http://purl.obolibrary.org/obo/IAO_0000136> "http://purl.obolibrary.org/obo/IAO_0000136")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000136> "is about")
+
+# Object Property: <http://purl.obolibrary.org/obo/OBI_0000293> (has specified input)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000293> "has specified input"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/RO_0000057>)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/OBI_0000295>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/OBI_0000011>)
+
+# Object Property: <http://purl.obolibrary.org/obo/OBI_0000295> (is specified input of)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000295> "is specified input of"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/OBI_0000295> <http://purl.obolibrary.org/obo/RO_0000056>)
+
+# Object Property: <http://purl.obolibrary.org/obo/OBI_0000299> (has specified output)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000299> "has specified output"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/RO_0000057>)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/OBI_0000312>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/OBI_0000011>)
+
+# Object Property: <http://purl.obolibrary.org/obo/OBI_0000312> (is specified output of)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000312> "is specified output of"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/RO_0000056>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000052> (characteristic of)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0000052> "characteristic of"@en)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/RO_0000053>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000053> (has characteristic)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0000053> "has characteristic")
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/RO_0000053> "https://github.com/oborel/obo-relations/pull/284")
+InverseFunctionalObjectProperty(<http://purl.obolibrary.org/obo/RO_0000053>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0000001>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000056> (participates in)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0000056> "participates in"@en)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/RO_0000057>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000057> (has participant)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0000057> "has participant")
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.obolibrary.org/obo/BFO_0000015>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000058> (is concretized as)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0000058> "is concretized as"@en)
+
+# Object Property: <http://purl.obolibrary.org/obo/STATO_0000102> (executes)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/STATO_0000102> "executes")
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000015> (process)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000015> "process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000015> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BFO_0000015>))
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000017> (realizable)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000017> "realizable"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000017> <http://purl.obolibrary.org/obo/PATO_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000023> (role)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000023> "role"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000023> <http://purl.obolibrary.org/obo/BFO_0000017>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000040> (material entity)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000040> "material entity"@en)
+
+# Class: <http://purl.obolibrary.org/obo/COB_0000077> (action specification)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/COB_0000077> "action specification")
+SubClassOf(<http://purl.obolibrary.org/obo/COB_0000077> <http://purl.obolibrary.org/obo/IAO_0000033>)
+SubClassOf(<http://purl.obolibrary.org/obo/COB_0000077> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/COB_0000077>))
+SubClassOf(<http://purl.obolibrary.org/obo/COB_0000077> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/IAO_0000005>))
+
+# Class: <http://purl.obolibrary.org/obo/COB_0000082> (planned process)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/COB_0000082> "A process that is initiated by an agent who intends to carry out a plan to achieve an objective through one or more actions as described in a plan specification.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/COB_0000082> "planned process")
+SubClassOf(<http://purl.obolibrary.org/obo/COB_0000082> <http://purl.obolibrary.org/obo/BFO_0000015>)
+SubClassOf(<http://purl.obolibrary.org/obo/COB_0000082> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/COB_0000081> <http://purl.obolibrary.org/obo/OBI_0000260>))
+SubClassOf(<http://purl.obolibrary.org/obo/COB_0000082> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/COB_0000087> <http://purl.obolibrary.org/obo/SEPIO_0000048>))
+
+# Class: <http://purl.obolibrary.org/obo/COB_0000119> (evaluant role)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/COB_based_on> <http://purl.obolibrary.org/obo/COB_0000119> "OBI:0000067")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/COB_0000119> "evaluant role")
+SubClassOf(<http://purl.obolibrary.org/obo/COB_0000119> <http://purl.obolibrary.org/obo/BFO_0000023>)
+
+# Class: <http://purl.obolibrary.org/obo/COB_0000120> (information representation)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/COB_based_on> <http://purl.obolibrary.org/obo/COB_0000120> "http://purl.obolibrary.org/obo/IAO_0000015")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/COB_0000120> "Pier 'representational entity'")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/COB_0000120> "This captures: pattern of writing in a book; neural state in the brain, electronic charges in computer memory etc")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/COB_0000120> "information representation")
+EquivalentClasses(<http://purl.obolibrary.org/obo/COB_0000120> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/COB_0000078> <http://purl.obolibrary.org/obo/IAO_0000030>))
+SubClassOf(<http://purl.obolibrary.org/obo/COB_0000120> <http://purl.obolibrary.org/obo/PATO_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/COB_0000121> (measurement datum)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/COB_based_on> <http://purl.obolibrary.org/obo/COB_0000121> "http://purl.obolibrary.org/obo/IAO_0000109")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/COB_0000121> "measurement datum")
+SubClassOf(<http://purl.obolibrary.org/obo/COB_0000121> <http://purl.obolibrary.org/obo/IAO_0000027>)
+
+# Class: <http://purl.obolibrary.org/obo/COB_0000122> (physical information carrier)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/COB_0000122> "physical information carrier")
+EquivalentClasses(<http://purl.obolibrary.org/obo/COB_0000122> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/COB_0000078> <http://purl.obolibrary.org/obo/IAO_0000030>)))
+SubClassOf(<http://purl.obolibrary.org/obo/COB_0000122> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000005> (objective specification)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000005> "objective specification")
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000005> <http://purl.obolibrary.org/obo/IAO_0000033>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000027> (data item)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000027> "data item"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000027> <http://purl.obolibrary.org/obo/IAO_0000030>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000030> (information)
+
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/IAO_0000030> "Pier: 'data, information or knowledge'. OR 'representation")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000030> "information")
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> owl:Thing))
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000030> ObjectSomeValuesFrom(ObjectInverseOf(<http://purl.obolibrary.org/obo/COB_0000078>) <http://purl.obolibrary.org/obo/COB_0000120>))
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000033> (directive information entity)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000033> "directive information entity")
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000033> <http://purl.obolibrary.org/obo/IAO_0000030>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000104> (plan specification)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000104> "plan specification")
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000104> <http://purl.obolibrary.org/obo/IAO_0000033>)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000104> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/COB_0000077>))
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000104> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/IAO_0000005>))
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000310> (document)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000310> "document"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000310> <http://purl.obolibrary.org/obo/IAO_0000030>)
+
+# Class: <http://purl.obolibrary.org/obo/OBI_0000011> (completely executed planned process)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000011> "completely executed planned process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000011> <http://purl.obolibrary.org/obo/COB_0000082>)
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000011> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/COB_0000087> <http://purl.obolibrary.org/obo/OBI_0000260>))
+
+# Class: <http://purl.obolibrary.org/obo/OBI_0000066> (investigation)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000066> "investigation"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000066> <http://purl.obolibrary.org/obo/OBI_0000011>)
+
+# Class: <http://purl.obolibrary.org/obo/OBI_0000070> (assay)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000070> "assay"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000070> <http://purl.obolibrary.org/obo/OBI_0000011>)
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000070> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000293> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/COB_0000119>))))
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000070> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/COB_0000121> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/COB_0000119>))))))
+
+# Class: <http://purl.obolibrary.org/obo/OBI_0000260> (plan)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000260> "plan"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000260> <http://purl.obolibrary.org/obo/BFO_0000017>)
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000260> <http://purl.obolibrary.org/obo/COB_0000120>)
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000260> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/COB_0000078> <http://purl.obolibrary.org/obo/IAO_0000104>))
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000260> ObjectAllValuesFrom(ObjectInverseOf(<http://purl.obolibrary.org/obo/COB_0000087>) <http://purl.obolibrary.org/obo/COB_0000082>))
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000001> (characteristic)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000001> "characteristic"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0000001> "https://github.com/OBOFoundry/COB/issues/65")
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0000001> "https://github.com/oborel/obo-relations/pull/284")
+SubClassOf(Annotation(rdfs:comment "We should name the inverse in COB and avoid the confusing inverse(..) construct") <http://purl.obolibrary.org/obo/PATO_0000001> ObjectSomeValuesFrom(ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0000053>) owl:Thing))
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000001> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PATO_0000001>))
+
+# Class: <http://purl.obolibrary.org/obo/SEPIO_0000048> (agent role)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/SEPIO_0000048> "A role realized by a participant in a process such that the participant causes the process.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SEPIO_0000048> "agent role")
+SubClassOf(<http://purl.obolibrary.org/obo/SEPIO_0000048> <http://purl.obolibrary.org/obo/BFO_0000023>)
+
+
+SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/COB_0000087> <http://purl.obolibrary.org/obo/COB_0000078>) <http://purl.obolibrary.org/obo/STATO_0000102>)
+)
