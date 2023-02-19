@@ -2294,7 +2294,7 @@ SubClassOf(<http://www.w3.org/ns/prov#Person> ObjectSomeValuesFrom(obo:RO_000221
 AnnotationAssertion(obo:IAO_0000115 <http://www.w3.org/ns/prov#SoftwareAgent> "A software agent is running software.")
 AnnotationAssertion(rdfs:comment <http://www.w3.org/ns/prov#SoftwareAgent> "Software agents are autonomous computer programs that carries out tasks.  They designed to execute algorithm(s) that receive some input information and direct its processing to achieve a specified goal. Artificial  intelligence is not required to be considered a software agent - only that it can autonomously execute programmed tasks.")
 AnnotationAssertion(rdfs:label <http://www.w3.org/ns/prov#SoftwareAgent> "SoftwareAgent"@en)
-SubClassOf(<http://www.w3.org/ns/prov#SoftwareAgent> obo:IAO_0000030)
+SubClassOf(<http://www.w3.org/ns/prov#SoftwareAgent> obo:BFO_0000004)
 SubClassOf(<http://www.w3.org/ns/prov#SoftwareAgent> ObjectSomeValuesFrom(obo:BFO_0000051 obo:IAO_0000064))
 SubClassOf(<http://www.w3.org/ns/prov#SoftwareAgent> ObjectSomeValuesFrom(obo:RO_0002215 obo:SEPIO_0000158))
 
