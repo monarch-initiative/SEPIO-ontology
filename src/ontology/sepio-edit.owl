@@ -16,20 +16,14 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 Ontology(<http://purl.obolibrary.org/obo/sepio.owl>
 
 Import(<http://purl.obolibrary.org/obo/sepio/imports/ro_import.owl>)
-
-Import(<http://purl.obolibrary.org/obo/sepio/imports/iao_import.owl>)
-
+Import(<http://purl.obolibrary.org/obo/sepio/imports/omo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/sepio/imports/bfo_import.owl>)
+Import(<http://purl.obolibrary.org/obo/sepio/imports/cob_import.owl>)
 
-Annotation(dce:title "Ontology for scientific evidence and provenance information")
-Annotation(terms:license "Unspecified")
-
-Annotation(dce:contributor "Matthew Brush")
-Annotation(terms:description "The SEPIO ontology is in its early stages of development, undergoing iterative refinement as new requirements emerge and alignment with existing standards is explored. The SEPIO core file imports two files which can be resolved at the URLs below:
-
-IAO ontology-metadata import: https://raw.githubusercontent.com/monarch-initiative/SEPIO-ontology/master/src/ontology/imports/ontology-metadata.owl
-
-bfo mireot: https://raw.githubusercontent.com/monarch-initiative/SEPIO-ontology/master/src/ontology/mireots/bfo-mireot.owl")
+Annotation(terms:description "The SEPIO ontology is in its early stages of development, undergoing iterative refinement as new requirements emerge and alignment with existing standards is explored.")
+Annotation(dce:title "Ontology for Scientific Evidence and Provenance Information")
+Annotation(terms:license <https://creativecommons.org/licenses/by/4.0/>)
+Annotation(terms:contributor <https://orcid.org/0000-0002-1048-5019>)
 
 Declaration(Class(obo:BFO_0000001))
 Declaration(Class(obo:BFO_0000002))
