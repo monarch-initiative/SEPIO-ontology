@@ -5,7 +5,6 @@ repo: SEPIO-ontology
 report_fail_on: none
 export_formats:
   - owl
-  - obo
 release_artefacts: 
   - base
   - full
@@ -17,3 +16,5 @@ import_group:
     - id: bfo
     - id: cob
 robot_java_args: '-Xmx8G'
+robot_report:
+  ensure_owl2dl_profile: FALSE

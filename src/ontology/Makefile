@@ -54,7 +54,7 @@ OTHER_SRC =
 ONTOLOGYTERMS =             $(TMPDIR)/ontologyterms.txt
 EDIT_PREPROCESSED =         $(TMPDIR)/$(ONT)-preprocess.owl
 
-FORMATS = $(sort  owl obo owl)
+FORMATS = $(sort  owl owl)
 FORMATS_INCL_TSV = $(sort $(FORMATS) tsv)
 RELEASE_ARTEFACTS = $(sort $(ONT)-base $(ONT)-full )
 
@@ -71,7 +71,7 @@ all: all_odk
 all_odk: odkversion test all_assets
 
 .PHONY: test
-test: odkversion reason_test sparql_test robot_reports $(REPORTDIR)/validate_profile_owl2dl_$(ONT).owl.txt
+test: odkversion reason_test sparql_test robot_reports 
 	echo "Finished running all tests successfully."
 
 .PHONY: release_diff
@@ -191,10 +191,10 @@ endif
 # ----------------------------------------
 
 $(REPORTDIR)/$(SRC)-obo-report.tsv: $(SRCMERGED) | $(REPORTDIR)
-	$(ROBOT) report -i $< $(REPORT_LABEL) $(REPORT_PROFILE_OPTS) --fail-on $(REPORT_FAIL_ON) --base-iri $(URIBASE)/SEPIO_ --base-iri $(URIBASE)/sepio --print 5 -o $@
+	$(ROBOT) report -i $< $(REPORT_LABEL) $(REPORT_PROFILE_OPTS) --fail-on $(REPORT_FAIL_ON) --print 5 -o $@
 
 $(REPORTDIR)/%-obo-report.tsv: % | $(REPORTDIR)
-	$(ROBOT) report -i $< $(REPORT_LABEL) $(REPORT_PROFILE_OPTS) --fail-on $(REPORT_FAIL_ON) --base-iri $(URIBASE)/SEPIO_ --base-iri $(URIBASE)/sepio --print 5 -o $@
+	$(ROBOT) report -i $< $(REPORT_LABEL) $(REPORT_PROFILE_OPTS) --fail-on $(REPORT_FAIL_ON) --print 5 -o $@
 
 # ----------------------------------------
 # Release assets
@@ -396,9 +396,6 @@ $(SUBSETDIR)/%.owl: $(ONT).owl | $(SUBSETDIR)
 .PRECIOUS: $(SUBSETDIR)/%.owl
 
 
-$(SUBSETDIR)/%.obo: $(SUBSETDIR)/%.owl
-	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $@ && rm $@.tmp.obo
-
 
 # ---------------------------------------------
 # Sparql queries: Table exports / Query Reports
@@ -418,10 +415,6 @@ endif
 # ----------------------------------------
 
 
-$(ONT)-base.obo: $(ONT)-base.owl
-	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $@ && rm $@.tmp.obo
-$(ONT)-full.obo: $(ONT)-full.owl
-	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $@ && rm $@.tmp.obo
 # ----------------------------------------
 # Release artefacts: main release artefacts
 # ----------------------------------------
@@ -430,8 +423,6 @@ $(ONT).owl: $(ONT)-full.owl
 	$(ROBOT) annotate --input $< --ontology-iri $(URIBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 		convert -o $@.tmp.owl && mv $@.tmp.owl $@
 
-$(ONT).obo: $(ONT).owl
-	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $@ && rm $@.tmp.obo
 # -----------------------------------------------------
 # Release artefacts: variants (base, full, simple, etc)
 # -----------------------------------------------------
