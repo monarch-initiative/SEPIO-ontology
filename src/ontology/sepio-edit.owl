@@ -1978,7 +1978,8 @@ SubClassOf(obo:SEPIO_0000156 obo:SEPIO_0000048)
 
 AnnotationAssertion(obo:IAO_0100001 obo:SEPIO_0000157 <http://www.w3.org/ns/prov#SoftwareAgent>)
 AnnotationAssertion(rdfs:label obo:SEPIO_0000157 "obsolete software agent")
-AnnotationAssertion(owl:deprecated obo:SEPIO_0000157 "true")
+SubClassOf(obo:SEPIO_0000157 oboInOwl:ObsoleteClass)
+AnnotationAssertion(owl:deprecated obo:SEPIO_0000157 "true"^^xsd:boolean)
 
 # Class: obo:SEPIO_0000158 (contribution)
 
@@ -2058,6 +2059,7 @@ AnnotationAssertion(obo:IAO_0000116 obo:SEPIO_0000175 "In SEPIO, a high-level di
 This distinction is important because the ultimate truth of observations or findings do not depend on evidence in the same way that the truth of assertions does.  Accordingly, any data related to an observation is not treated as evidence, and captured as observations.")
 AnnotationAssertion(rdfs:comment obo:SEPIO_0000175 "An observation reflects only what an agent observed or device recorded. It is therefore considered a matter of fact, rather than a propositional assertion that may or may not be true.  This does not mean that the observations or recordings were necessarily accurate or correct - only that they were indeed made by an agent.  For example, the observation that \"I counted six ducks in the pond\" is a matter of fact, even if there are actually seven because I missed one that was hiding in the reeds.")
 AnnotationAssertion(rdfs:label obo:SEPIO_0000175 "obsolete_observation"@en)
+AnnotationAssertion(owl:deprecated obo:SEPIO_0000175 "true"^^xsd:boolean)
 SubClassOf(obo:SEPIO_0000175 oboInOwl:ObsoleteClass)
 
 # Class: obo:SEPIO_0000180 (obsolete_evidence statement)
@@ -2075,6 +2077,7 @@ Sc:
 has_role some 'evidence  role'")
 AnnotationAssertion(rdfs:comment obo:SEPIO_0000180 "Evidence Statements can be 'findings' that summarize data and outcomes from a particular study, or evidence-based 'assertions' that make a broader claim, as inferred from the interpretation and evaluation of previously generated information.")
 AnnotationAssertion(rdfs:label obo:SEPIO_0000180 "obsolete_evidence statement"@en)
+AnnotationAssertion(owl:deprecated obo:SEPIO_0000180 "true"^^xsd:boolean)
 SubClassOf(obo:SEPIO_0000180 oboInOwl:ObsoleteClass)
 
 # Class: obo:SEPIO_0000181 (obsolete_evidence data)
@@ -2094,6 +2097,7 @@ AnnotationAssertion(rdfs:comment obo:SEPIO_0000181 "Instances of this class can 
 
 The notion of 'evidence data' is meant to be contrasted with the notion of an 'evidence statement', which is a statement used as evidence. (Statements here are logical sentences with truth value that are typically supported by interpretation of more fundamental data).")
 AnnotationAssertion(rdfs:label obo:SEPIO_0000181 "obsolete_evidence data"@en)
+AnnotationAssertion(owl:deprecated obo:SEPIO_0000181 "true"^^xsd:boolean)
 SubClassOf(obo:SEPIO_0000181 oboInOwl:ObsoleteClass)
 
 # Class: obo:SEPIO_0000185 (obsolete_data table)
@@ -2102,6 +2106,7 @@ AnnotationAssertion(obo:IAO_0000118 obo:SEPIO_0000185 "A set of data arranged in
 AnnotationAssertion(obo:IAO_0000119 obo:SEPIO_0000185 "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C48693 ! Data Table")
 AnnotationAssertion(obo:IAO_0000231 obo:SEPIO_0000185 "Not required for data models.")
 AnnotationAssertion(rdfs:label obo:SEPIO_0000185 "obsolete_data table"@en)
+AnnotationAssertion(owl:deprecated obo:SEPIO_0000185 "true"^^xsd:boolean)
 SubClassOf(obo:SEPIO_0000185 oboInOwl:ObsoleteClass)
 
 # Class: obo:SEPIO_0000186 (patient phenotyping study)
@@ -2138,6 +2143,7 @@ AnnotationAssertion(obo:IAO_0000118 obo:SEPIO_0000385 "plan specification")
 AnnotationAssertion(obo:IAO_0000231 obo:SEPIO_0000385 "Decided to use IAO:plan specification here.  Will give this term 'method' as a SEPIO-preferred label.")
 AnnotationAssertion(rdfs:comment obo:SEPIO_0000385 "An information content entity that specifies instructions for how a particular objective can be achieved.")
 AnnotationAssertion(rdfs:label obo:SEPIO_0000385 "obsolete_method"@en)
+AnnotationAssertion(owl:deprecated obo:SEPIO_0000385 "true"^^xsd:boolean)
 SubClassOf(obo:SEPIO_0000385 oboInOwl:ObsoleteClass)
 
 # Class: obo:SEPIO_0000400 (study data set)
@@ -2167,6 +2173,7 @@ SubClassOf(obo:SEPIO_0000400 obo:IAO_0000100)
 AnnotationAssertion(obo:IAO_0000115 obo:SEPIO_0000401 "A declarative sentence that expresses a belief or judgement that is not necessarily based on fact or knowledge.")
 AnnotationAssertion(rdfs:comment obo:SEPIO_0000401 "Opinions are matters of subjective judgement or taste, and typically not able to be scientifically validated as objectively true based on empirical evidence. In this way, they are distinct from statements that have inherent truth value.")
 AnnotationAssertion(rdfs:label obo:SEPIO_0000401 "obsolete_opinion"@en)
+AnnotationAssertion(owl:deprecated obo:SEPIO_0000401 "true"^^xsd:boolean)
 SubClassOf(obo:SEPIO_0000401 oboInOwl:ObsoleteClass)
 
 # Class: obo:SEPIO_0000402 (evidence direction)
@@ -2242,6 +2249,7 @@ SubClassOf(obo:STATO_0000104 obo:STATO_0000039)
 
 AnnotationAssertion(obo:IAO_0000115 obo:STATO_0000184 "A ratio is a data item which is formed with two numbers r and s is written r/s, where r is the numerator and s is the denominator. The ratio of r to s is equivalent to the quotient r/s.")
 AnnotationAssertion(rdfs:label obo:STATO_0000184 "obsolete_ratio")
+AnnotationAssertion(owl:deprecated obo:STATO_0000184 "true"^^xsd:boolean)
 SubClassOf(obo:STATO_0000184 oboInOwl:ObsoleteClass)
 
 # Class: <http://purl.org/oban/association> (association)
