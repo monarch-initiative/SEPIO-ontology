@@ -21,7 +21,7 @@ Import(<http://purl.obolibrary.org/obo/sepio/imports/bfo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/sepio/imports/cob_import.owl>)
 
 Annotation(terms:description "The SEPIO ontology is in its early stages of development, undergoing iterative refinement as new requirements emerge and alignment with existing standards is explored.")
-Annotation(dce:title "Ontology for Scientific Evidence and Provenance Information")
+Annotation(dc:title "Ontology for Scientific Evidence and Provenance Information")
 Annotation(terms:license <https://creativecommons.org/licenses/by/4.0/>)
 Annotation(terms:contributor <https://orcid.org/0000-0002-1048-5019>)
 
@@ -274,6 +274,8 @@ Declaration(AnnotationProperty(terms:source))
 Declaration(AnnotationProperty(oboInOwl:hasDbXref))
 Declaration(AnnotationProperty(oboInOwl:inSubset))
 Declaration(AnnotationProperty(foaf:mbox))
+Declaration(AnnotationProperty(owl:deprecated))
+
 ############################
 #   Annotation Properties
 ############################
@@ -324,7 +326,6 @@ AnnotationPropertyRange(terms:source obo:IAO_0000030)
 # Annotation Property: oboInOwl:hasDbXref (database_cross_reference)
 
 AnnotationAssertion(rdfs:label oboInOwl:hasDbXref "database_cross_reference"@en)
-
 
 ############################
 #   Object Properties
@@ -1977,13 +1978,9 @@ SubClassOf(obo:SEPIO_0000156 obo:SEPIO_0000048)
 
 # Class: obo:SEPIO_0000157 (software agent)
 
-AnnotationAssertion(obo:IAO_0000115 obo:SEPIO_0000157 "An autonomous computer program that carries out tasks on behalf of users.")
-AnnotationAssertion(obo:IAO_0000119 obo:SEPIO_0000157 "https://en.wikipedia.org/wiki/Software_agent")
-AnnotationAssertion(rdfs:comment obo:SEPIO_0000157 "Software agents are designed to execute algorithm(s) that receive some input information and direct its processing to achieve a specified goal.")
-AnnotationAssertion(rdfs:label obo:SEPIO_0000157 "software agent"@en)
-SubClassOf(obo:SEPIO_0000157 obo:IAO_0000030)
-SubClassOf(obo:SEPIO_0000157 ObjectSomeValuesFrom(obo:BFO_0000051 obo:IAO_0000064))
-SubClassOf(obo:SEPIO_0000157 ObjectSomeValuesFrom(obo:SEPIO_0000046 obo:SEPIO_0000048))
+AnnotationAssertion(rdfs:label obo:SEPIO_0000157 "obsolete software agent")
+AnnotationAssertion(owl:deprecated obo:SEPIO_0000157 "true")
+AnnotationAssertion(obo:IAO_0100001 obo:SEPIO_0000157 <http://www.w3.org/ns/prov#SoftwareAgent>)
 
 # Class: obo:SEPIO_0000158 (contribution)
 
