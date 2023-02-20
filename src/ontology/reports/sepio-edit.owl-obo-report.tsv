@@ -1,0 +1,108 @@
+Level	Rule Name	Subject	Property	Value
+ERROR	missing_label	http://purl.org/pav/sourceAccessedAt	rdfs:label	
+ERROR	misused_obsolete_label	obsolete_categorical measurement datum	rdfs:label	obsolete_categorical measurement datum
+ERROR	misused_obsolete_label	obsolete_has_category_label	rdfs:label	obsolete_has_category_label
+ERROR	misused_obsolete_label	obsolete_date_created	rdfs:label	obsolete_date_created@en
+ERROR	misused_obsolete_label	obsolete_manual assertion process	rdfs:label	obsolete_manual assertion process@en
+ERROR	misused_obsolete_label	obsolete_automated assertion process	rdfs:label	obsolete_automated assertion process@en
+ERROR	misused_obsolete_label	obsolete_study group	rdfs:label	obsolete_study group@en
+ERROR	misused_obsolete_label	obsolete_evidence_assessed_by	rdfs:label	obsolete_evidence_assessed_by@en
+ERROR	misused_obsolete_label	obsolete_date_curated	rdfs:label	obsolete_date_curated@en
+ERROR	misused_obsolete_label	obsolete_has_quantifier	rdfs:label	obsolete_has_quantifier@en
+ERROR	misused_obsolete_label	ObsoleteDataProperty	rdfs:label	ObsoleteDataProperty
+ERROR	multiple_definitions	provided_by	IAO:0000115	A relationship between an information resource found in some information system, and the agent (person, organization, computational agent) who is responsible for sharing/providing it to that information system.
+ERROR	multiple_definitions	provided_by	IAO:0000115	Note that this property connects a resource to an agent, not to some other information resource from which it came (e.g. another database or an API from which the resource in question was obtained).  Use the 'source' property to capture this type of relationship.
+WARN	annotation_whitespace	drawing a conclusion based on data	IAO:0000112	Concluding that a gene is upregulated in a tissue sample based on the band intensity in a western blot.  Concluding that a patient has a infection based on measurement of an elevated body temperature and reported headache. Concluding that there were problems in an investigation because data from PCR and microarray are conflicting. Concluding that 'defects in gene XYZ cause cancer due to improper DNA repair' based on data from experiments in that study that gene XYZ is involved in DNA repair, and the conclusion of a previous study that cancer patients have an increased number of mutations in this gene. 
+WARN	annotation_whitespace	binding assay	IAO:0000112	Determination of KD value for an antibody binding a protein using a BIACORE assay. Using plate bound antigen in an ELISA to determine if a mixture of serum antibodies bind the antigen.nnThe following are NOT binding assays, as the desired output is not binding data: RNA microarray experiments to determine levels of gene expression. ChIP experiments to determine where in DNA a transcription factor binds. Using an IL-2 antibody on an ELISA plate to determine presence of IL-2 after stimulating a T cell culture. 
+WARN	equivalent_class_axiom_no_genus	Agent	capable of	contribution
+WARN	invalid_xref	record	database_cross_reference	http://semanticscience.org/resource/SIO_000088 ! 'record'
+WARN	missing_definition	realizes	IAO:0000115	
+WARN	missing_definition	history	IAO:0000115	
+WARN	missing_definition	assay	IAO:0000115	
+WARN	missing_definition	input of	IAO:0000115	
+WARN	missing_definition	output of	IAO:0000115	
+WARN	missing_definition	has_agent	IAO:0000115	
+WARN	missing_definition	obsolete_date_created	IAO:0000115	
+WARN	missing_definition	assertion_has_subject	IAO:0000115	
+WARN	missing_definition	assertion_has_object	IAO:0000115	
+WARN	missing_definition	assertion_has_predicate	IAO:0000115	
+WARN	missing_definition	has_role	IAO:0000115	
+WARN	missing_definition	consider	IAO:0000115	
+WARN	missing_definition	obsolete_manual assertion process	IAO:0000115	
+WARN	missing_definition	SEPIO_editor_note	IAO:0000115	
+WARN	missing_definition	start_date	IAO:0000115	
+WARN	missing_definition	interventional clinical study	IAO:0000115	
+WARN	missing_definition	observational clinical study	IAO:0000115	
+WARN	missing_definition	case-control clinical study	IAO:0000115	
+WARN	missing_definition	in vitro study	IAO:0000115	
+WARN	missing_definition	in vivo study	IAO:0000115	
+WARN	missing_definition	cell-based in vivo study	IAO:0000115	
+WARN	missing_definition	tissue-based in vivo study	IAO:0000115	
+WARN	missing_definition	organism-based in vivo study	IAO:0000115	
+WARN	missing_definition	curation-based study	IAO:0000115	
+WARN	missing_definition	is_equilavent_to	IAO:0000115	
+WARN	missing_definition	is_consistent_with	IAO:0000115	
+WARN	missing_definition	strongly_contradicts	IAO:0000115	
+WARN	missing_definition	contradicts	IAO:0000115	
+WARN	missing_definition	date_created_before	IAO:0000115	
+WARN	missing_definition	has_compatability	IAO:0000115	
+WARN	missing_definition	conflicts_with	IAO:0000115	
+WARN	missing_definition	aligns_with	IAO:0000115	
+WARN	missing_definition	has_textual_part	IAO:0000115	
+WARN	missing_definition	is_inconsistent_with	IAO:0000115	
+WARN	missing_definition	evidence role	IAO:0000115	
+WARN	missing_definition	obsolete_evidence_assessed_by	IAO:0000115	
+WARN	missing_definition	creator role	IAO:0000115	
+WARN	missing_definition	assessor role	IAO:0000115	
+WARN	missing_definition	approver role	IAO:0000115	
+WARN	missing_definition	curator role	IAO:0000115	
+WARN	missing_definition	activity_date	IAO:0000115	
+WARN	missing_definition	end_date	IAO:0000115	
+WARN	missing_definition	obsolete_date_curated	IAO:0000115	
+WARN	missing_definition	date_updated	IAO:0000115	
+WARN	missing_definition	usage note	IAO:0000115	
+WARN	missing_definition	contributes_to	IAO:0000115	
+WARN	missing_definition	obsolete_has_quantifier	IAO:0000115	
+WARN	missing_definition	provider interpretation	IAO:0000115	
+WARN	missing_definition	in_value_set	IAO:0000115	
+WARN	missing_definition	evidence_item_for	IAO:0000115	
+WARN	missing_definition	date_created_after	IAO:0000115	
+WARN	missing_definition	sepio_preferred_label	IAO:0000115	
+WARN	missing_definition	ExploratoryObjectProperty	IAO:0000115	
+WARN	missing_definition	probabilistic quantifier	IAO:0000115	
+WARN	missing_definition	is_evidence_line_for	IAO:0000115	
+WARN	missing_definition	recommendation	IAO:0000115	
+WARN	missing_definition	hypothesis	IAO:0000115	
+WARN	missing_definition	activity_location	IAO:0000115	
+WARN	missing_definition	ExploratoryDataProperty	IAO:0000115	
+WARN	missing_definition	ObsoleteDataProperty	IAO:0000115	
+WARN	missing_definition	has_value	IAO:0000115	
+WARN	missing_definition	identifier	IAO:0000115	
+WARN	missing_definition	title	IAO:0000115	
+WARN	missing_definition	association has object	IAO:0000115	
+WARN	missing_definition	association has predicate	IAO:0000115	
+WARN	missing_definition	association has subject	IAO:0000115	
+WARN	missing_definition	digital object identifier (doi)	IAO:0000115	
+WARN	missing_definition	Authored by	IAO:0000115	
+WARN	missing_definition	Created by	IAO:0000115	
+WARN	missing_definition	Derived from	IAO:0000115	
+WARN	missing_definition	Retrieved from	IAO:0000115	
+WARN	missing_definition	http://purl.org/pav/sourceAccessedAt	IAO:0000115	
+WARN	missing_definition	version	IAO:0000115	
+WARN	missing_definition	database_cross_reference	IAO:0000115	
+WARN	missing_definition	Group	IAO:0000115	
+WARN	missing_subset_declaration	obo:ro/subsets#ro-eco	rdfs:subPropertyOf	
+INFO	lowercase_definition	part of	IAO:0000115	a core relation that holds between a part and its whole@en
+INFO	lowercase_definition	has part	IAO:0000115	a core relation that holds between a whole and its part@en
+INFO	lowercase_definition	journal article	IAO:0000115	a report that is published in a journal@en
+INFO	lowercase_definition	data item	IAO:0000115	a data item is an information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.@en
+INFO	lowercase_definition	report	IAO:0000115	a document assembled by an author for the purpose of providing information for the audience. A report is the output of a documenting process and has the objective to be consumed by a specific audience. Topic of the report is on something that has completed. A report is not a single figure. Examples of reports are journal article, patent application, grant progress report, case report (not patient record)@en
+INFO	lowercase_definition	investigation	IAO:0000115	a planned process that consists of parts: planning, study design execution, documentation and which produce conclusion(s).
+INFO	lowercase_definition	participates in	IAO:0000115	a relation between a continuant and a process, in which the continuant is somehow involved in the process@en
+INFO	lowercase_definition	has participant	IAO:0000115	a relation between a process and a continuant, in which the continuant is somehow involved in the process@en
+INFO	lowercase_definition	has input	IAO:0000115	p has direct input c iff c is a participant in p, c is present at the start of p, and the state of c is modified during p.
+INFO	lowercase_definition	has output	IAO:0000115	p has output c iff c is a participant in p, c is present at the end of p, and c is not present at the beginning of p.
+INFO	lowercase_definition	has_confidence_level	IAO:0000115	a relation between an information entity and an indicator of degree of confidence that the information it represents is true.
+INFO	lowercase_definition	performed_for	IAO:0000115	a relation between an agent and an other agent, typically an organization, on whose behalf a Contribution is made.
+INFO	lowercase_definition	statistic	IAO:0000115	a statistic is a measurement datum to describe a dataset or a variable. It is generated by a calculation on set of observed data.@en
+INFO	missing_superclass	skos terms	rdfs:subClassOf	
