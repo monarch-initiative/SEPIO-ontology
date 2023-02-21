@@ -372,13 +372,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000136 "Is_about is a (currently) p
 AnnotationAssertion(rdfs:label obo:IAO_0000136 "is_about"@en)
 ObjectPropertyDomain(obo:IAO_0000136 obo:IAO_0000030)
 
-# Object Property: obo:OBI_0000999 (obsolete_has_category_label)
-
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000999 "A relation between a categorical measurement data item and the categorical label that indicates the value of that data item on the categorical scale.")
-AnnotationAssertion(obo:IAO_0000231 obo:OBI_0000999 "Deprecate unless there is a use case requireing this relation.")
-AnnotationAssertion(rdfs:label obo:OBI_0000999 "obsolete_has_category_label")
-SubObjectPropertyOf(obo:OBI_0000999 oboInOwl:ObsoleteProperty)
-
 # Object Property: obo:RO_0000056 (participates in)
 
 AnnotationAssertion(obo:IAO_0000111 obo:RO_0000056 "participates in"@en)
@@ -810,6 +803,7 @@ SubObjectPropertyOf(obo:SEPIO_0000151 obo:SEPIO_0000150)
 AnnotationAssertion(obo:IAO_0000118 obo:SEPIO_0000152 "evidence_strength_assessed_by")
 AnnotationAssertion(obo:IAO_0000231 obo:SEPIO_0000152 "ClinGen not using this, as they create contrigution objects and assign roles to capture such information.  Can bring it back if there is need in some other use case/application.")
 AnnotationAssertion(rdfs:label obo:SEPIO_0000152 "obsolete_evidence_assessed_by"@en)
+AnnotationAssertion(owl:deprecated obo:SEPIO_0000152 "true"^^xsd:boolean)
 SubObjectPropertyOf(obo:SEPIO_0000152 oboInOwl:ObsoleteProperty)
 
 # Object Property: obo:SEPIO_0000159 (qualified_contribution)
@@ -829,7 +823,7 @@ ObjectPropertyRange(obo:SEPIO_0000159 obo:SEPIO_0000158)
 
 # Object Property: obo:SEPIO_0000167 (has_confidence_level)
 
-AnnotationAssertion(obo:IAO_0000115 obo:SEPIO_0000167 "a relation between an information entity and an indicator of degree of confidence that the information it represents is true.")
+AnnotationAssertion(obo:IAO_0000115 obo:SEPIO_0000167 "A relation between an information entity and an indicator of degree of confidence that the information it represents is true.")
 AnnotationAssertion(obo:IAO_0000118 obo:SEPIO_0000167 "trust_rating")
 AnnotationAssertion(rdfs:comment obo:SEPIO_0000167 "Confidence in an information entity can mean different things for different types of information.  For example, for assertions this reflects the confidence an agent has that the proposition it puts forth is true.  For things like data items, it reflects the confidence an agent has that the data accurately reflects the aspect of reality its was intended to measure.")
 AnnotationAssertion(rdfs:label obo:SEPIO_0000167 "has_confidence_level"@en)
@@ -838,7 +832,7 @@ ObjectPropertyRange(obo:SEPIO_0000167 obo:SEPIO_0000187)
 
 # Object Property: obo:SEPIO_0000169 (performed_for)
 
-AnnotationAssertion(obo:IAO_0000115 obo:SEPIO_0000169 "a relation between an agent and an other agent, typically an organization, on whose behalf a Contribution is made.")
+AnnotationAssertion(obo:IAO_0000115 obo:SEPIO_0000169 "A relation between an agent and an other agent, typically an organization, on whose behalf a Contribution is made.")
 AnnotationAssertion(obo:IAO_0000118 obo:SEPIO_0000169 "performed_on_behalf_of")
 AnnotationAssertion(rdfs:label obo:SEPIO_0000169 "performed_for"@en)
 ObjectPropertyDomain(obo:SEPIO_0000169 obo:SEPIO_0000158)
@@ -889,6 +883,7 @@ ObjectPropertyDomain(obo:SEPIO_0000197 obo:SEPIO_0000001)
 
 AnnotationAssertion(obo:IAO_0000231 obo:SEPIO_0000232 "Deprecate until there is a specific use case requiring this relation.")
 AnnotationAssertion(rdfs:label obo:SEPIO_0000232 "obsolete_has_quantifier"@en)
+AnnotationAssertion(owl:deprecated obo:SEPIO_0000232 "true"^^xsd:boolean)
 SubObjectPropertyOf(obo:SEPIO_0000232 oboInOwl:ObsoleteProperty)
 
 # Object Property: obo:SEPIO_0000257 (describes_study_data)
@@ -971,8 +966,8 @@ AnnotationAssertion(rdfs:label obo:SEPIO_0000427 "is_evidence_line_for"@en)
 # Object Property: obo:SEPIO_0000437 (provided_by)
 
 AnnotationAssertion(obo:IAO_0000115 obo:SEPIO_0000437 "A relationship between an information resource found in some information system, and the agent (person, organization, computational agent) who is responsible for sharing/providing it to that information system.")
-AnnotationAssertion(obo:IAO_0000115 obo:SEPIO_0000437 "Note that this property connects a resource to an agent, not to some other information resource from which it came (e.g. another database or an API from which the resource in question was obtained).  Use the 'source' property to capture this type of relationship.")
 AnnotationAssertion(obo:IAO_0000116 obo:SEPIO_0000437 "Consider: pav:providedBy")
+AnnotationAssertion(rdfs:comment obo:SEPIO_0000437 "Note that this property connects a resource to an agent, not to some other information resource from which it came (e.g. another database or an API from which the resource in question was obtained).  Use the 'source' property to capture this type of relationship.")
 AnnotationAssertion(rdfs:label obo:SEPIO_0000437 "provided_by")
 
 # Object Property: obo:SEPIO_0000438 (has_supporting_evidence_from_source)
@@ -1112,14 +1107,14 @@ The time of the retrieval should be indicated using pav:retrievedOn. The agent m
 AnnotationAssertion(rdfs:label <http://purl.org/pav/retrievedFrom> "Retrieved from")
 SubObjectPropertyOf(<http://purl.org/pav/retrievedFrom> terms:source)
 
-# Object Property: <http://purl.org/pav/sourceAccessedAt> (<http://purl.org/pav/sourceAccessedAt>)
+# Object Property: <http://purl.org/pav/sourceAccessedAt> (Source accessed at)
 
-AnnotationAssertion(rdfs:comment <http://purl.org/pav/sourceAccessedAt> "Source accessed at")
 AnnotationAssertion(rdfs:comment <http://purl.org/pav/sourceAccessedAt> "The resource is related to a given source which was accessed or consulted (but not retrieved, imported or derived from). This access can be detailed with pav:sourceAccessedBy and pav:sourceAccessedOn.
 
 For instance, a curator (pav:curatedBy) might have consulted figures in a published paper to confirm that a dataset was correctly pav:importedFrom the paper's supplementary CSV file.
 
 Another example: I can access the page for tomorrow weather in Boston (http://www.weather.com/weather/tomorrow/Boston+MA+02143)  and I can blog ‘tomorrow is going to be nice’. The source does not make any claims about the nice weather, that is my interpretation; therefore the blog post has pav:sourceAccessedAt the weather page.")
+AnnotationAssertion(rdfs:label <http://purl.org/pav/sourceAccessedAt> "Source accessed at")
 SubObjectPropertyOf(<http://purl.org/pav/sourceAccessedAt> oboInOwl:ObsoleteProperty)
 
 
@@ -1145,8 +1140,7 @@ Def: The date of creation of the resource representation.  The agents responsibl
 
 3. prov:generatedAtTime: The time at which an entity was completely created and is available for use.")
 AnnotationAssertion(rdfs:label obo:SEPIO_0000021 "obsolete_date_created"@en)
-SubDataPropertyOf(obo:SEPIO_0000021 obo:SEPIO_0000435)
-DataPropertyDomain(obo:SEPIO_0000021 obo:BFO_0000002)
+AnnotationAssertion(owl:deprecated obo:SEPIO_0000021 "true"^^xsd:boolean)
 
 # Data Property: obo:SEPIO_0000036 (date_modified)
 
@@ -1226,7 +1220,7 @@ This property is normally used in a functional way, indicating the last curation
 
 The value is of type xsd:dateTime, for instance \"2013-03-26T14:49:00+01:00\"^^xsd:dateTime. The timezone information (Z for UTC, +01:00 for UTC+1, etc) SHOULD be included unless unknown. If the time (or parts of time) is unknown, use 00:00:00Z. If the day/month is unknown, use 01-01, for instance, if we only know September 1983, then use \"1983-09-01T00:00:00Z\"^^xsd:dateTime.")
 AnnotationAssertion(rdfs:label obo:SEPIO_0000162 "obsolete_date_curated"@en)
-SubDataPropertyOf(obo:SEPIO_0000162 obo:SEPIO_0000435)
+AnnotationAssertion(owl:deprecated obo:SEPIO_0000162 "true"^^xsd:boolean)
 
 # Data Property: obo:SEPIO_0000164 (date_updated)
 
@@ -1297,6 +1291,7 @@ AnnotationAssertion(rdfs:label obo:SEPIO_0000434 "ExploratoryDataProperty")
 # Data Property: obo:SEPIO_0000435 (ObsoleteDataProperty)
 
 AnnotationAssertion(rdfs:label obo:SEPIO_0000435 "ObsoleteDataProperty")
+AnnotationAssertion(owl:deprecated obo:SEPIO_0000435 "true"^^xsd:boolean)
 
 # Data Property: obo:SEPIO_0000436 (date_created)
 
@@ -1603,7 +1598,7 @@ SubClassOf(obo:OBI_0000272 obo:IAO_0000104)
 # Class: obo:OBI_0000338 (drawing a conclusion based on data)
 
 AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000338 "drawing a conclusion based on data"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000338 "Concluding that a gene is upregulated in a tissue sample based on the band intensity in a western blot.  Concluding that a patient has a infection based on measurement of an elevated body temperature and reported headache. Concluding that there were problems in an investigation because data from PCR and microarray are conflicting. Concluding that 'defects in gene XYZ cause cancer due to improper DNA repair' based on data from experiments in that study that gene XYZ is involved in DNA repair, and the conclusion of a previous study that cancer patients have an increased number of mutations in this gene. ")
+AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000338 "Concluding that a gene is upregulated in a tissue sample based on the band intensity in a western blot.  Concluding that a patient has a infection based on measurement of an elevated body temperature and reported headache. Concluding that there were problems in an investigation because data from PCR and microarray are conflicting. Concluding that 'defects in gene XYZ cause cancer due to improper DNA repair' based on data from experiments in that study that gene XYZ is involved in DNA repair, and the conclusion of a previous study that cancer patients have an increased number of mutations in this gene.")
 AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000338 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000338 "A planned process in which data gathered in an investigation is evaluated in the context of existing knowledge with the objective to generate more general conclusions or to conclude that the data does not allow one to draw general conclusion"@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000338 "PERSON: Bjoern Peters")
@@ -1613,16 +1608,10 @@ AnnotationAssertion(obo:IAO_0000412 obo:OBI_0000338 obo:obi.owl)
 AnnotationAssertion(rdfs:label obo:OBI_0000338 "drawing a conclusion based on data"@en)
 SubClassOf(obo:OBI_0000338 obo:SEPIO_0000003)
 
-# Class: obo:OBI_0000938 (obsolete_categorical measurement datum)
-
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000938 "A measurement datum that is reported on a categorical scale")
-AnnotationAssertion(rdfs:label obo:OBI_0000938 "obsolete_categorical measurement datum")
-SubClassOf(obo:OBI_0000938 oboInOwl:ObsoleteClass)
-
 # Class: obo:OBI_0001146 (binding assay)
 
 AnnotationAssertion(obo:IAO_0000111 obo:OBI_0001146 "binding assay")
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0001146 "Determination of KD value for an antibody binding a protein using a BIACORE assay. Using plate bound antigen in an ELISA to determine if a mixture of serum antibodies bind the antigen.nnThe following are NOT binding assays, as the desired output is not binding data: RNA microarray experiments to determine levels of gene expression. ChIP experiments to determine where in DNA a transcription factor binds. Using an IL-2 antibody on an ELISA plate to determine presence of IL-2 after stimulating a T cell culture. ")
+AnnotationAssertion(obo:IAO_0000112 obo:OBI_0001146 "Determination of KD value for an antibody binding a protein using a BIACORE assay. Using plate bound antigen in an ELISA to determine if a mixture of serum antibodies bind the antigen.nnThe following are NOT binding assays, as the desired output is not binding data: RNA microarray experiments to determine levels of gene expression. ChIP experiments to determine where in DNA a transcription factor binds. Using an IL-2 antibody on an ELISA plate to determine presence of IL-2 after stimulating a T cell culture.")
 AnnotationAssertion(obo:IAO_0000114 obo:OBI_0001146 obo:IAO_0000120)
 AnnotationAssertion(obo:IAO_0000115 obo:OBI_0001146 "An assay with the objective to characterize the disposition of two or more material entities to form a complex.")
 AnnotationAssertion(obo:IAO_0000117 obo:OBI_0001146 "PERSON:Bjoern Peters, Randi Vita, Jason Greenbaum")
@@ -1763,6 +1752,7 @@ AnnotationAssertion(obo:IAO_0000116 obo:SEPIO_0000055 "Mappings to related terms
 1. http://purl.obolibrary.org/obo/ECO_0000218 ! manual assertion
 ECO Definition/Comment: A manual assertion could be based on evidence that is generated by and interpreted by a human or it could involve human review of computationally generated information.")
 AnnotationAssertion(rdfs:label obo:SEPIO_0000055 "obsolete_manual assertion process"@en)
+AnnotationAssertion(owl:deprecated obo:SEPIO_0000055 "true"^^xsd:boolean)
 SubClassOf(obo:SEPIO_0000055 oboInOwl:ObsoleteClass)
 
 # Class: obo:SEPIO_0000056 (obsolete_automated assertion process)
@@ -1774,6 +1764,7 @@ AnnotationAssertion(obo:IAO_0000116 obo:SEPIO_0000056 "Mappings to related terms
 ECO Definition/Comment: An automatic assertion is based on computationally generated information that is not reviewed by a person prior to making the assertion. For example, one common type of automatic assertion involves creating an association of evidence with an entity based on commonness of attributes of that entity and another entity for which an assertion already exists. The commonness is determined algorithmically.")
 AnnotationAssertion(rdfs:comment obo:SEPIO_0000056 "Ultimately even automated assertions require a human agent to set a confidence threshhold that determines when a computational output (e.g. a sequence similarity p-value) justifies an assesrtion being made.")
 AnnotationAssertion(rdfs:label obo:SEPIO_0000056 "obsolete_automated assertion process"@en)
+AnnotationAssertion(owl:deprecated obo:SEPIO_0000056 "true"^^xsd:boolean)
 SubClassOf(obo:SEPIO_0000056 oboInOwl:ObsoleteClass)
 
 # Class: obo:SEPIO_0000058 (provenance)
@@ -1892,6 +1883,7 @@ SubClassOf(obo:SEPIO_0000125 obo:SEPIO_0000004)
 AnnotationAssertion(obo:IAO_0000115 obo:SEPIO_0000127 "A group of individuals (organisms, specimens, samples) that are subjects in an observational or intervention study, and whose members represent experimental replicates as defined in a study design by the same independent variable specifications (i.e. subjected to the same selction criteria or set of experimental interventions).")
 AnnotationAssertion(obo:IAO_0000116 obo:SEPIO_0000127 "Consider: STATO_0000193, OBI_0000174")
 AnnotationAssertion(rdfs:label obo:SEPIO_0000127 "obsolete_study group"@en)
+AnnotationAssertion(owl:deprecated obo:SEPIO_0000127 "true"^^xsd:boolean)
 SubClassOf(obo:SEPIO_0000127 oboInOwl:ObsoleteClass)
 
 # Class: obo:SEPIO_0000131 (curation)
@@ -1978,8 +1970,8 @@ SubClassOf(obo:SEPIO_0000156 obo:SEPIO_0000048)
 
 AnnotationAssertion(obo:IAO_0100001 obo:SEPIO_0000157 <http://www.w3.org/ns/prov#SoftwareAgent>)
 AnnotationAssertion(rdfs:label obo:SEPIO_0000157 "obsolete software agent")
-SubClassOf(obo:SEPIO_0000157 oboInOwl:ObsoleteClass)
 AnnotationAssertion(owl:deprecated obo:SEPIO_0000157 "true"^^xsd:boolean)
+SubClassOf(obo:SEPIO_0000157 oboInOwl:ObsoleteClass)
 
 # Class: obo:SEPIO_0000158 (contribution)
 
@@ -2207,7 +2199,7 @@ SubClassOf(obo:SEPIO_0000432 obo:SEPIO_0000174)
 # Class: obo:SEPIO_000383 (record)
 
 AnnotationAssertion(obo:IAO_0000115 obo:SEPIO_000383 "A document containing a collection of data or statements about some entity.")
-AnnotationAssertion(oboInOwl:hasDbXref obo:SEPIO_000383 "http://semanticscience.org/resource/SIO_000088 ! 'record'")
+AnnotationAssertion(oboInOwl:hasDbXref obo:SEPIO_000383 "SIO:000088")
 AnnotationAssertion(rdfs:comment obo:SEPIO_000383 "'Record' here is broadly defined to include any document holding (typically) structured information about a particular entity. This can include individual records from a database or knowledgebase that hold information about the subject of the record. 
 
 Specific examples include:
@@ -2222,7 +2214,7 @@ SubClassOf(obo:SEPIO_000383 obo:IAO_0000310)
 
 # Class: obo:STATO_0000039 (statistic)
 
-AnnotationAssertion(obo:IAO_0000112 obo:STATO_0000039 _:genid2147483828)
+AnnotationAssertion(obo:IAO_0000112 obo:STATO_0000039 _:genid2147483648)
 AnnotationAssertion(obo:IAO_0000114 obo:STATO_0000039 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000115 obo:STATO_0000039 "a statistic is a measurement datum to describe a dataset or a variable. It is generated by a calculation on set of observed data."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:STATO_0000039 "Alejandra Gonzalez-Beltran"@en)
