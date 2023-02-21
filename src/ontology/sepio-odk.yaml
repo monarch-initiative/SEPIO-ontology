@@ -18,3 +18,4 @@ import_group:
 robot_java_args: '-Xmx8G'
 robot_report:
   ensure_owl2dl_profile: FALSE
+  fail_on: ERROR
