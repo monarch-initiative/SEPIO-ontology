@@ -18,12 +18,12 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/sepio/sepio-full.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/sepio/releases/2023-02-19/sepio-full.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/sepio/releases/2023-02-21/sepio-full.owl"/>
         <dc:title>Ontology for Scientific Evidence and Provenance Information</dc:title>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-1048-5019"/>
         <terms:description>The SEPIO ontology is in its early stages of development, undergoing iterative refinement as new requirements emerge and alignment with existing standards is explored.</terms:description>
-        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <owl:versionInfo>2023-02-19</owl:versionInfo>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/3.0/"/>
+        <owl:versionInfo>2023-02-21</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -879,12 +879,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000999 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000999">
-        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"/>
-        <obo:IAO_0000115>A relation between a categorical measurement data item and the categorical label that indicates the value of that data item on the categorical scale.</obo:IAO_0000115>
-        <obo:IAO_0000231>Deprecate unless there is a use case requireing this relation.</obo:IAO_0000231>
-        <rdfs:label>obsolete_has_category_label</rdfs:label>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000999"/>
     
 
 
@@ -3517,6 +3512,7 @@ Should further clarification become available with respect to whether PAV or DC 
         <obo:IAO_0000118>evidence_strength_assessed_by</obo:IAO_0000118>
         <obo:IAO_0000231>ClinGen not using this, as they create contrigution objects and assign roles to capture such information.  Can bring it back if there is need in some other use case/application.</obo:IAO_0000231>
         <rdfs:label xml:lang="en">obsolete_evidence_assessed_by</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:ObjectProperty>
     
 
@@ -3545,7 +3541,7 @@ Want to be able to support inferences such as:
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SEPIO_0000167">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/SEPIO_0000187"/>
-        <obo:IAO_0000115>a relation between an information entity and an indicator of degree of confidence that the information it represents is true.</obo:IAO_0000115>
+        <obo:IAO_0000115>A relation between an information entity and an indicator of degree of confidence that the information it represents is true.</obo:IAO_0000115>
         <obo:IAO_0000118>trust_rating</obo:IAO_0000118>
         <rdfs:comment>Confidence in an information entity can mean different things for different types of information.  For example, for assertions this reflects the confidence an agent has that the proposition it puts forth is true.  For things like data items, it reflects the confidence an agent has that the data accurately reflects the aspect of reality its was intended to measure.</rdfs:comment>
         <rdfs:label xml:lang="en">has_confidence_level</rdfs:label>
@@ -3558,7 +3554,7 @@ Want to be able to support inferences such as:
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SEPIO_0000169">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SEPIO_0000158"/>
         <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Agent"/>
-        <obo:IAO_0000115>a relation between an agent and an other agent, typically an organization, on whose behalf a Contribution is made.</obo:IAO_0000115>
+        <obo:IAO_0000115>A relation between an agent and an other agent, typically an organization, on whose behalf a Contribution is made.</obo:IAO_0000115>
         <obo:IAO_0000118>performed_on_behalf_of</obo:IAO_0000118>
         <rdfs:label xml:lang="en">performed_for</rdfs:label>
     </owl:ObjectProperty>
@@ -3643,6 +3639,7 @@ A property chain (has_evidence_line o has_evidence_item -&gt; has_evidence_with_
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"/>
         <obo:IAO_0000231>Deprecate until there is a specific use case requiring this relation.</obo:IAO_0000231>
         <rdfs:label xml:lang="en">obsolete_has_quantifier</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:ObjectProperty>
     
 
@@ -3772,8 +3769,8 @@ The value of this property is typically a term from some defined set of values t
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SEPIO_0000437">
         <obo:IAO_0000115>A relationship between an information resource found in some information system, and the agent (person, organization, computational agent) who is responsible for sharing/providing it to that information system.</obo:IAO_0000115>
-        <obo:IAO_0000115>Note that this property connects a resource to an agent, not to some other information resource from which it came (e.g. another database or an API from which the resource in question was obtained).  Use the &apos;source&apos; property to capture this type of relationship.</obo:IAO_0000115>
         <obo:IAO_0000116>Consider: pav:providedBy</obo:IAO_0000116>
+        <rdfs:comment>Note that this property connects a resource to an agent, not to some other information resource from which it came (e.g. another database or an API from which the resource in question was obtained).  Use the &apos;source&apos; property to capture this type of relationship.</rdfs:comment>
         <rdfs:label>provided_by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3998,12 +3995,12 @@ The time of the retrieval should be indicated using pav:retrievedOn. The agent m
 
     <owl:ObjectProperty rdf:about="http://purl.org/pav/sourceAccessedAt">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"/>
-        <rdfs:comment>Source accessed at</rdfs:comment>
         <rdfs:comment>The resource is related to a given source which was accessed or consulted (but not retrieved, imported or derived from). This access can be detailed with pav:sourceAccessedBy and pav:sourceAccessedOn.
 
 For instance, a curator (pav:curatedBy) might have consulted figures in a published paper to confirm that a dataset was correctly pav:importedFrom the paper&apos;s supplementary CSV file.
 
 Another example: I can access the page for tomorrow weather in Boston (http://www.weather.com/weather/tomorrow/Boston+MA+02143)  and I can blog ‘tomorrow is going to be nice’. The source does not make any claims about the nice weather, that is my interpretation; therefore the blog post has pav:sourceAccessedAt the weather page.</rdfs:comment>
+        <rdfs:label>Source accessed at</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -4037,8 +4034,6 @@ Another example: I can access the page for tomorrow weather in Boston (http://ww
     <!-- http://purl.obolibrary.org/obo/SEPIO_0000021 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SEPIO_0000021">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/SEPIO_0000435"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <obo:IAO_0000116>SEPIO creates a relation separate from existing PAV and PROV relations (e.g. pav:createdOn) which are too specific about whether a relation refers to the date on which the abstract information content was created, or when it was serialized and documented as a concrete digital artifact or resource with a particular format.</obo:IAO_0000116>
         <obo:IAO_0000118>created_on</obo:IAO_0000118>
         <obo:SEPIO_0000052>Consider: 
@@ -4050,6 +4045,7 @@ Def: The date of creation of the resource representation.  The agents responsibl
 
 3. prov:generatedAtTime: The time at which an entity was completely created and is available for use.</obo:SEPIO_0000052>
         <rdfs:label xml:lang="en">obsolete_date_created</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:DatatypeProperty>
     
 
@@ -4159,7 +4155,6 @@ Definition: Date on which the resource was changed.</obo:SEPIO_0000052>
     <!-- http://purl.obolibrary.org/obo/SEPIO_0000162 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SEPIO_0000162">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/SEPIO_0000435"/>
         <obo:IAO_0000116>Consider: http://purl.org/pav/curatedOn
 
 Definition: The date this resource was curated.
@@ -4170,6 +4165,7 @@ This property is normally used in a functional way, indicating the last curation
 
 The value is of type xsd:dateTime, for instance &quot;2013-03-26T14:49:00+01:00&quot;^^xsd:dateTime. The timezone information (Z for UTC, +01:00 for UTC+1, etc) SHOULD be included unless unknown. If the time (or parts of time) is unknown, use 00:00:00Z. If the day/month is unknown, use 01-01, for instance, if we only know September 1983, then use &quot;1983-09-01T00:00:00Z&quot;^^xsd:dateTime.</obo:IAO_0000116>
         <rdfs:label xml:lang="en">obsolete_date_curated</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:DatatypeProperty>
     
 
@@ -4284,6 +4280,7 @@ For example, many silico prediction tools such as SIFT interrogate biological se
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SEPIO_0000435">
         <rdfs:label>ObsoleteDataProperty</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:DatatypeProperty>
     
 
@@ -5779,7 +5776,7 @@ Figures often present data in a form that is summarized or abstracted for human 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000338">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SEPIO_0000003"/>
         <obo:IAO_0000111 xml:lang="en">drawing a conclusion based on data</obo:IAO_0000111>
-        <obo:IAO_0000112>Concluding that a gene is upregulated in a tissue sample based on the band intensity in a western blot.  Concluding that a patient has a infection based on measurement of an elevated body temperature and reported headache. Concluding that there were problems in an investigation because data from PCR and microarray are conflicting. Concluding that &apos;defects in gene XYZ cause cancer due to improper DNA repair&apos; based on data from experiments in that study that gene XYZ is involved in DNA repair, and the conclusion of a previous study that cancer patients have an increased number of mutations in this gene. </obo:IAO_0000112>
+        <obo:IAO_0000112>Concluding that a gene is upregulated in a tissue sample based on the band intensity in a western blot.  Concluding that a patient has a infection based on measurement of an elevated body temperature and reported headache. Concluding that there were problems in an investigation because data from PCR and microarray are conflicting. Concluding that &apos;defects in gene XYZ cause cancer due to improper DNA repair&apos; based on data from experiments in that study that gene XYZ is involved in DNA repair, and the conclusion of a previous study that cancer patients have an increased number of mutations in this gene.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">A planned process in which data gathered in an investigation is evaluated in the context of existing knowledge with the objective to generate more general conclusions or to conclude that the data does not allow one to draw general conclusion</obo:IAO_0000115>
         <obo:IAO_0000117>PERSON: Bjoern Peters</obo:IAO_0000117>
@@ -5793,11 +5790,7 @@ Figures often present data in a form that is summarized or abstracted for human 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000938 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000938">
-        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-        <obo:IAO_0000115>A measurement datum that is reported on a categorical scale</obo:IAO_0000115>
-        <rdfs:label>obsolete_categorical measurement datum</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000938"/>
     
 
 
@@ -5806,7 +5799,7 @@ Figures often present data in a form that is summarized or abstracted for human 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001146">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <obo:IAO_0000111>binding assay</obo:IAO_0000111>
-        <obo:IAO_0000112>Determination of KD value for an antibody binding a protein using a BIACORE assay. Using plate bound antigen in an ELISA to determine if a mixture of serum antibodies bind the antigen.nnThe following are NOT binding assays, as the desired output is not binding data: RNA microarray experiments to determine levels of gene expression. ChIP experiments to determine where in DNA a transcription factor binds. Using an IL-2 antibody on an ELISA plate to determine presence of IL-2 after stimulating a T cell culture. </obo:IAO_0000112>
+        <obo:IAO_0000112>Determination of KD value for an antibody binding a protein using a BIACORE assay. Using plate bound antigen in an ELISA to determine if a mixture of serum antibodies bind the antigen.nnThe following are NOT binding assays, as the desired output is not binding data: RNA microarray experiments to determine levels of gene expression. ChIP experiments to determine where in DNA a transcription factor binds. Using an IL-2 antibody on an ELISA plate to determine presence of IL-2 after stimulating a T cell culture.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>An assay with the objective to characterize the disposition of two or more material entities to form a complex.</obo:IAO_0000115>
         <obo:IAO_0000117>PERSON:Bjoern Peters, Randi Vita, Jason Greenbaum</obo:IAO_0000117>
@@ -6073,6 +6066,7 @@ May be equivalent to http://purl.obolibrary.org/obo/ECO_0000217 ! assertion meth
 1. http://purl.obolibrary.org/obo/ECO_0000218 ! manual assertion
 ECO Definition/Comment: A manual assertion could be based on evidence that is generated by and interpreted by a human or it could involve human review of computationally generated information.</obo:IAO_0000116>
         <rdfs:label xml:lang="en">obsolete_manual assertion process</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -6088,6 +6082,7 @@ ECO Definition/Comment: A manual assertion could be based on evidence that is ge
 ECO Definition/Comment: An automatic assertion is based on computationally generated information that is not reviewed by a person prior to making the assertion. For example, one common type of automatic assertion involves creating an association of evidence with an entity based on commonness of attributes of that entity and another entity for which an assertion already exists. The commonness is determined algorithmically.</obo:IAO_0000116>
         <rdfs:comment>Ultimately even automated assertions require a human agent to set a confidence threshhold that determines when a computational output (e.g. a sequence similarity p-value) justifies an assesrtion being made.</rdfs:comment>
         <rdfs:label xml:lang="en">obsolete_automated assertion process</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -6278,6 +6273,7 @@ Useful because these map to the strength of the evidence each might provide.</ob
         <obo:IAO_0000115>A group of individuals (organisms, specimens, samples) that are subjects in an observational or intervention study, and whose members represent experimental replicates as defined in a study design by the same independent variable specifications (i.e. subjected to the same selction criteria or set of experimental interventions).</obo:IAO_0000115>
         <obo:IAO_0000116>Consider: STATO_0000193, OBI_0000174</obo:IAO_0000116>
         <rdfs:label xml:lang="en">obsolete_study group</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -6769,7 +6765,7 @@ An attribute of an evidence line describing whether it supports or disputes a ta
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SEPIO_000383">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
         <obo:IAO_0000115>A document containing a collection of data or statements about some entity.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>http://semanticscience.org/resource/SIO_000088 ! &apos;record&apos;</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SIO:000088</oboInOwl:hasDbXref>
         <rdfs:comment>&apos;Record&apos; here is broadly defined to include any document holding (typically) structured information about a particular entity. This can include individual records from a database or knowledgebase that hold information about the subject of the record. 
 
 Specific examples include:
