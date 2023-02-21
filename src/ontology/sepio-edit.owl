@@ -21,7 +21,7 @@ Import(<http://purl.obolibrary.org/obo/sepio/imports/ro_import.owl>)
 Annotation(dc:title "Ontology for Scientific Evidence and Provenance Information")
 Annotation(terms:contributor <https://orcid.org/0000-0002-1048-5019>)
 Annotation(terms:description "The SEPIO ontology is in its early stages of development, undergoing iterative refinement as new requirements emerge and alignment with existing standards is explored.")
-Annotation(terms:license <https://creativecommons.org/licenses/by/4.0/>)
+Annotation(terms:license <https://creativecommons.org/licenses/by/3.0/>)
 
 Declaration(Class(obo:BFO_0000001))
 Declaration(Class(obo:BFO_0000002))
