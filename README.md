@@ -1,5 +1,9 @@
 [![DOI](https://zenodo.org/badge/13996/monarch-initiative/SEPIO-ontology.svg)](https://zenodo.org/badge/latestdoi/13996/monarch-initiative/SEPIO-ontology)
 
+>  _**WARNING**: The ontology here is a pre-release draft version that is still evolving, and subject to change.  A first official release of a stable core will likely happen in late 2023.  If you are making use of the ontology and would like to be updated about major changes and releases, please register in the [USERS.md](https://github.com/monarch-initiative/SEPIO-ontology/blob/master/USERS.md) file._ 
+
+
+-------------------------
 
 The **Scientific Evidence and Provenance Information Ontology** (**SEPIO**) is an OWL ontology developed to support rich, computable representations of the evidence and provenance behind scientific assertions. The core ontology defines a flexible and generic model that can be applied in any domain and extended with domain-specific features. The ontological model is the foundation of a larger **SEPIO Framework** that provides mechanisms to create custom schema for specific applications that leverage modern semantic web standards. The framework is comprised of four main components:
 
@@ -19,7 +23,8 @@ Data sources or developers interested in using SEPIO should begin by reading the
   
 ### License
 The SEPIO Ontology and Framework is an open source project, free to re-use and re-mix under a [Creative Commons 3.0 BY license](https://creativecommons.org/licenses/by/3.0/).
-
-
+ 
+### Development Context / Details:
+The ontology is one manifestation of the underlying SEPIO Information Model.  This information model is being developed as part of the GA4GH Variant Annotation (VA) workstream, to support data exchange across GA4GH systems, and has drifted from what is in the current SEPIO ontology found here.  The ontology will be updated to reflect these changes in the near future (likely fall 2023).  A link to documentation for the GA4GH VA Information Model that will the the basis for these updates will be provided here wiht the first release of this model (Summer/Fall 2023).
 
 
