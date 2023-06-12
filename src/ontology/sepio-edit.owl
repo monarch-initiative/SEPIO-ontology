@@ -2111,10 +2111,10 @@ SubClassOf(obo:SEPIO_0000186 obo:SEPIO_0000070)
 
 # Class: obo:SEPIO_0000187 (confidence level)
 
-AnnotationAssertion(obo:IAO_0000115 obo:SEPIO_0000187 "A measurement datum that quantifies the level of confidence an agent has that a particular statement is true.")
+AnnotationAssertion(obo:IAO_0000115 obo:SEPIO_0000187 "A measurement datum that quantifies the level of confidence an agent has that a particular piece of information is true.")
 AnnotationAssertion(rdfs:label obo:SEPIO_0000187 "confidence level"@en)
 SubClassOf(obo:SEPIO_0000187 obo:IAO_0000109)
-SubClassOf(obo:SEPIO_0000187 ObjectSomeValuesFrom(obo:IAO_0000136 obo:SEPIO_0000174))
+SubClassOf(obo:SEPIO_0000187 ObjectSomeValuesFrom(obo:IAO_0000136 obo:IAO_0000030))
 
 # Class: obo:SEPIO_0000258 (provider interpretation)
 
