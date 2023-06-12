@@ -6,3 +6,6 @@ Please edit this document via a PR to add your information to the table below, a
 | ------------ | --------------------------------------------- | ----------------------- | ------------------------- | 
 | Ga4GH Variant Annotation Model | Developing a json schema for exchange of knoweldge about genetic variants, with mappings to SEPIO classes for json-ld representations  |    Javier Lopez  | Javier.Lopez@genomicsengland.co.uk  |
 |  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
