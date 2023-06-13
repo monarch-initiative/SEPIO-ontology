@@ -2,6 +2,7 @@
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/sepio/sepio-base.owl#"
      xml:base="http://purl.obolibrary.org/obo/sepio/sepio-base.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:eco="http://purl.obolibrary.org/obo/eco/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -10,15 +11,16 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/sepio/sepio-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/sepio/releases/2023-02-21/sepio-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/sepio/releases/2023-06-13/sepio-base.owl"/>
         <dc:title>Ontology for Scientific Evidence and Provenance Information</dc:title>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-1048-5019"/>
         <terms:description>The SEPIO ontology is in its early stages of development, undergoing iterative refinement as new requirements emerge and alignment with existing standards is explored.</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/3.0/"/>
-        <owl:versionInfo>2023-02-21</owl:versionInfo>
+        <owl:versionInfo>2023-06-13</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -3097,10 +3099,10 @@ ftp://ftp.ncbi.nlm.nih.gov/pub/clinvar/release_notes/20170803_data_release_notes
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SEPIO_0000174"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A data item that quantifies the level of confidence an agent has that a particular piece of information is true.</obo:IAO_0000115>
+        <obo:IAO_0000115>A measurement datum that quantifies the level of confidence an agent has that a particular piece of information is true.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">confidence level</rdfs:label>
     </owl:Class>
     
