@@ -5,7 +5,7 @@ Please edit this document via a PR to add your information to the table below, a
 | Project Name |           Short Description of Use            |      Contact Person     |       Contact Email       |
 | ------------ | --------------------------------------------- | ----------------------- | ------------------------- | 
 | Ga4GH Variant Annotation Model | Developing a json schema for exchange of knoweldge about genetic variants, with mappings to SEPIO classes for json-ld representations  |    Javier Lopez  | Javier.Lopez@genomicsengland.co.uk  |
-|  |  |  |  |
+| Global Biotic Interactions | Articulate data reviews in machine readable statements. E.g., a data review bot states that claim X by Mo is inconsistent with claim Y by Jane | Jorrit Poelen | jhpoelen+sepio@jhpoelen.nl |
 |  |  |  |  |
 |  |  |  |  |
 |  |  |  |  |
