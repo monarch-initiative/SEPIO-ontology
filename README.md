@@ -1,6 +1,12 @@
 [![DOI](https://zenodo.org/badge/13996/monarch-initiative/SEPIO-ontology.svg)](https://zenodo.org/badge/latestdoi/13996/monarch-initiative/SEPIO-ontology)
 
->  _**WARNING**: The ontology here is a pre-release draft version that is still evolving, and subject to change.  A first official release of a stable core will likely happen in late 2024.  If you are making use of the ontology and would like to be updated about major changes and releases, please register in the [USERS.md](https://github.com/monarch-initiative/SEPIO-ontology/blob/master/USERS.md) file._ 
+>  _**WARNING**: The ontology here is out of date with the most recent developments in the SEPIO Model, which has focused on the development of a linkML-based information model, and 'Profiling' framework that supports derivation of custom schema for specific types of knowledge and use cases.
+>
+> The ontological model in this repository will be updated soon to reflect evolution of SEPIO.
+>
+> PLEASE USE THE MODELS IN THE NEW REPOSITORY [HERE](https://github.com/sepio-framework/sepio-linkml), as described in the web documentation [here](https://sepio-framework.github.io/sepio-linkml/).
+
+
 
 
 -------------------------
