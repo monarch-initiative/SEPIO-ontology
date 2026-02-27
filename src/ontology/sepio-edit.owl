@@ -660,10 +660,10 @@ InverseObjectProperties(obo:SEPIO_0000108 obo:SEPIO_0000109)
 ObjectPropertyDomain(obo:SEPIO_0000108 ObjectUnionOf(obo:SEPIO_0000000 obo:SEPIO_0000174))
 ObjectPropertyRange(obo:SEPIO_0000108 obo:IAO_0000310)
 
-# Object Property: obo:SEPIO_0000109 (expresses)
+# Object Property: obo:SEPIO_0000109 (expresses assertion or proposition)
 
 AnnotationAssertion(obo:IAO_0000115 obo:SEPIO_0000109 "Relationship between a document (e.g. a publication, report, database record) and an assertion or proposition that is stated in its content.")
-AnnotationAssertion(rdfs:label obo:SEPIO_0000109 "expresses"@en)
+AnnotationAssertion(rdfs:label obo:SEPIO_0000109 "expresses assertion or proposition"@en)
 ObjectPropertyDomain(obo:SEPIO_0000109 obo:IAO_0000310)
 ObjectPropertyRange(obo:SEPIO_0000109 ObjectUnionOf(obo:SEPIO_0000000 obo:SEPIO_0000001))
 
